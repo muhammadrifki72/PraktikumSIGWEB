@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Latihan 2</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #000080;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #000080;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+  .img_deg
+  {
+    float: right;
+  }
+</style>
+
+</head>
+<body>
+
+<header>
+  <h2>Sumatera Barat</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="https://goo.gl/maps/qx2jjXhur1Krkm7TA">Padang</a></li>
+      <li><a href="https://goo.gl/maps/2rr3grjf7ZmBmnZR6">Bukittinggi</a></li>
+      <li><a href="https://goo.gl/maps/WaazUurfd3ErJGF4A">Payakumbuh</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Padang</h1>
+    <img class="img_deg" img src="https://asset.kompas.com/crops/gxG7BrxV7Gf931pZvs5ham_dxKY=/0x0:1000x667/750x500/data/photo/2021/12/25/61c7232bdb54c.jpg" width="250" height="180">
+
+    <p>Kota Padang adalah ibu kota dari Provinsi Sumatera Barat, Indonesia. Terletak di pantai barat Pulau Sumatera, kota ini memiliki populasi yang cukup besar dan merupakan pusat pemerintahan, ekonomi, dan budaya di wilayah tersebut.</p>
+    <p>Padang juga dikenal dengan keindahan alamnya, termasuk pantai-pantai yang menarik dan masakan khasnya, seperti rendang.</p>
+
+  </article>
+  
+</section>
+
+<footer>
+  <p>Copyright @Muhammad Rifki</p>
+</footer>
+
+</body>
+</html>
